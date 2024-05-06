@@ -84,3 +84,7 @@ module.exports.logout_get = (req, res) => {
 	res.cookie('jwt', '', {maxAge: 1});
 	res.redirect('/login');
 	}
+
+module.exports.flag = (req, res) => {
+	res.send('<script>alert("Flag{Secret_Found}")</script>');
+}
