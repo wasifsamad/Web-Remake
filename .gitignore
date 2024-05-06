@@ -1,0 +1,114 @@
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Environment files #
+#####################
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+.env.local.js
+
+# Dependency directories #
+##########################
+node_modules/
+bower_components/
+
+# Build output #
+###############
+/build/
+/dist/
+/out/
+
+# Cache and compiled files #
+############################
+.cache/
+*.class
+*.jar
+*.war
+*.ear
+*.tmp
+*.temp
+*.o
+*.obj
+*.pyc
+*.swp
+*.swo
+
+# Miscellaneous #
+#################
+*.bak
+*.backup
+*.DS_Store
+*.orig
+*.tmp
+*.tmp.*
+*.log*
+*.tmp
+*.swp
+*.vi
+*.sass-cache/
+*.sublime-workspace
+*.project
+*.settings
+.vscode/
+*.idea/
+*.idea/workspace.xml
+.idea/
+*.iml
+*.nyc_output/
+
+# Compiled Python files #
+#########################
+*.pyc
+*.pyo
+__pycache__/
+
+# Images #
+##########
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.svg
+
+# Compiled files #
+##################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.gz
+*.bz2
+*.xz
+
+# Dependency directories #
+##########################
+/.deps/
+/bower_components/
+/jspm_packages/
+/node_modules/
