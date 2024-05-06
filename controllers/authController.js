@@ -86,5 +86,5 @@ module.exports.logout_get = (req, res) => {
 	}
 
 module.exports.flag = (req, res) => {
-	res.send('<script>alert("Flag{Secret_Found}")</script>');
+	res.render('flag');
 }
