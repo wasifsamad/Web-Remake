@@ -1,28 +1,23 @@
-# Vulnerability: Weak / Broken Access
+﻿## Title: The Shrewd Thief
+## Details:
+* difficulty: Easy
+* category: Web 
+* author: Sarmed
+* flags: flag{Secret_Found}
 
-## Pre-Requisites
-1. Basic understanding of Web Apps and authorization is a must.
-2. Make sure you have Node JS installed.
-3. For Windows, you'll have to download and install **node** as well as **npm** from browser. For Linux, following command would do:
-```
-sudo apt-get install nodejs
-sudo apt-get install npm
-```
-## Steps for setup
+## Description:
+The 
 
-1. Open CMD/Terminal on your desktop.
-2. Git clone the Repo.
-3. Open terminal inside it.
-4. Then we need to install required libraries and start our Node JS App, for that run:
-```
-cd broken-authorization
-npm install
-```
-5. Afterwards, run the following command:
-```
-node app.js
-```
-6. Start the challenge thereafter, for which you'll have to go on the link http://127.0.0.1:3000 on a browser.
+## Hint:
+Pay attention to where there are input fields.
 
-## Vulnerability difficulty and Exploitation details
-1. Difficulty: Medium
+## Intended Learning and outcome:
+
+With the given challenge, I was able to learn about how severe the vulnerability of Cross-Site Scripting is, as it can be used to steal session cookies of the victim. I learnt that there are different types of XSS, Reflected, Dom-based, and Stored. In this challenge I explored the Reflected XSS in depth. 
+
+## Solution: 
+
+To start this challenge you need to download the files in the repo. Then using the command "python3 server.py" on the terminal, we will run the script. Finally, we will go inside the templates folder and open the index.js file. The application looks like a real-world simulation of a consultancy, we will find potential input fields and we can see that the subscribe text box is one. When we enter an email, it accepts it, and shows us Subscribed. As we know this is an XSS Lab, we will enter the basic payload, "<script>alert(1)</script>" and upon hitting the subscribe button, we see the alert box is triggered. In the terminal, we can see the flag is displayed.
+
+
+........
